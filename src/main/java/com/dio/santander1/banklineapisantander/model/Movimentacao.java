@@ -2,6 +2,7 @@ package com.dio.santander1.banklineapisantander.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -18,7 +19,7 @@ public class Movimentacao {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@column(name = "data_hora")
+	@Column(name = "data_hora")
 	private LocalDateTime dataHora;
 	private String descrição;
 	
